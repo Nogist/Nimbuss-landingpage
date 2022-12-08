@@ -1,0 +1,125 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+} 
+.footer 
+p , a , svg {
+
+  margin: 0 !important;
+  color: white;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer {
+  background: #1E52AE;
+  display: flex;
+  
+}
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-contain-1 {
+  background-color: #2260CD;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: .8rem;
+}
+.footer-contain-1 a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  border:1px solid white;
+  border-radius: 25px;
+  padding : .6rem 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+.footer-contain-1 p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-family);
+
+}
+.footer-contain-1 a:hover {
+  background: white;
+  color: #2260CD ;
+}
+
+.footer-container-logo-home {
+  width: 100px;
+  height: 80px;
+
+}
+.footer-container-logo-home > img {
+  object-fit: contain;
+}
+.logos-home {
+  gap: 1.5rem;
+} 
+.logos-home svg {
+  color: white;
+  
+}
+.shortouts-all {
+  gap : 2rem
+}
+.shortouts {
+  gap: .2rem;
+}
+.footer-bottom {
+  padding-bottom: .3rem;
+  padding-right: .3rem;
+
+}
+.footer-bottom-content {
+  gap: .5rem;
+  width: 100%;
+  justify-content: center;
+
+}
+.footer-bottom-content p,
+.footer-bottom-content a , 
+.footer-bottom-content a:hover {
+  list-style: none;
+  
+  color: white;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-family: var(--font-family);
+}
+.footer-bottom svg {
+  font-size: 2.25rem; 
+  line-height: 2.5rem;
+  background-color: yellow;
+  border-radius: 50%;
+  padding: 7px;
+  color: #1E52AE;
+ 
+}
+@media only screen and (max-width: 700px) {
+  
+  .footer-contain-1 {
+    display: none;
+  }
+  .logos-home {
+    display: flex;
+    flex-direction: column;
+  }
+  .shortouts-all {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+}

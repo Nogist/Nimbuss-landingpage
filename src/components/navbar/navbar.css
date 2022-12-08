@@ -89,6 +89,8 @@ a.navbar__link:hover {
     top: 75px;
     right: 0;
     width: 20rem;
+    z-index: 999;
+    background-color: black;
   
     background: var(--color-bg);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

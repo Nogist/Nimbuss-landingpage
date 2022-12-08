@@ -67,6 +67,7 @@
   padding: 0 4rem;
   justify-content: space-around;
   width: 100%;
+  z-index: -1;
 }
 .home-body > div {
   width: 100%;
@@ -107,4 +108,18 @@
       -webkit-transform: translate3d(0, 200px, 0);
       transform: translate3d(0, 200px, 0);
   }
+}
+
+@media only screen and (max-width: 550px) { 
+  .home-body {
+    padding: 0 .5rem;
+  }
+  .typewriter {
+    font-size: 1.5rem;
+  }
+  .home-body > div p {
+     font-size: 15px;
+     line-height: 30px;
+  }
+
 }

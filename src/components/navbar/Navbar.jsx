@@ -27,10 +27,25 @@ const Navbar = () => {
       className="navbar__link" to='/'>Home</NavLink> */}
           <NavLink className="navbar__link" to='/about' onMouseEnter={hove} onMouseLeave={hove}> About
             {!hover ? (<IoMdArrowDropdown />) : (<IoMdArrowDropup /> ) }
+            <div className={hover ? 'options open .dropdown_menu-4 ' : 'closed-link'}>
+              <span>
+                <NavLink to='/about'>Our Network</NavLink>
+              </span>
+              <NavLink  to='/about'>Full Team Profile</NavLink>
+            </div>
           </NavLink>
+       
           <NavLink className="navbar__link" to='/service' onMouseEnter={hoves} onMouseLeave={hoves}> Services
             {hovers ? (<IoMdArrowDropup />) : (<IoMdArrowDropdown /> )}
+            <div className={hovers ? 'options .dropdown_menu-4' : 'closed-link'}>
+              <span><NavLink to='/about'>Billboard Ardvertising</NavLink></span>
+              <span><NavLink to='/about'>Lamp Post Advertising</NavLink></span>
+              <span><NavLink  to='/about'>Shopping Mall Superstore</NavLink></span>
+              <span><NavLink  to='/about'>Gureilla Advertising</NavLink></span>
+              <NavLink to='/about'>Brand Adverstising</NavLink>
+            </div>
           </NavLink>
+          
           <NavLink
       className="navbar__link" to='/project'>Nimbus Aid Project</NavLink>
           <NavLink
@@ -51,8 +66,8 @@ const Navbar = () => {
               {!hover ? (<IoMdArrowDropdown />) : (<IoMdArrowDropup /> ) } 
             </div>
           </NavLink>
-            <NavLink className={hover ? 'under-link scale-up' : 'closed-link' } to='/about'>Our Network</NavLink>
-            <NavLink className={hover ? 'under-link scale-up' : 'closed-link' } to='/about'>Full Team Profile</NavLink>
+          <NavLink className={hover ? 'under-link scale-up' : 'closed-link' } to='/about'>Our Network</NavLink>
+          <NavLink className={hover ? 'under-link scale-up' : 'closed-link' } to='/about'>Full Team Profile</NavLink>
           <NavLink className='navbar-mobile-drop'>
             <NavLink  to='/service'> Services </NavLink>
             <div onClick={hoves} className='navbar-mobile-icon'>

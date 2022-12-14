@@ -38,28 +38,10 @@ const TypeWrite = () => {
             .deleteAll()
             .typeString("Reach Over 1.5 Million Audience Across Platforms Monthly")
 
-            .start();
+            .start()
           
             }}
             />
-            {/* <p>With our outstanding digital out-of-home advertising opportunities, you are directly in the face of your target audience.</p>
-            <button>Explore</button>
-            <IoIosArrowDown className='ball' /> */}
-            {/* .typewriter-content button {
-  background-color: #1E52AE;
-  padding: .8rem 3rem;
-  border-radius: 40px;
-  font-size: 18px;
-  font-weight: 300;
-
-} */}
-{/* .typewriter-content p {
-  margin: 0 !important;
-  text-align: center;
-  font-size: 20px;
-  line-height: 2rem;
-  width: 55%;
-} */}
       </div>
     </div>
   )

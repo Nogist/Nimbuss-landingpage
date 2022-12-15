@@ -3,14 +3,13 @@ import picture1 from '../../../assets/1.webp';
 
 const WhatWeDo = () => {
   return (
-    <div className='whatwedo d-flex w-100 py-10 '>
-      <div className='whatwedo-content d-flex flex-column px-10 py-10'>
+    <div className='whatwedo d-flex w-100 py-10 justify-content-center '>
+      <div className='whatwedo-content d-flex flex-column py-10'>
         <span className='span'>
           <div className='iframe'>
             <iframe 
               frameborder="0"
               allowfullscreen="1"
-              style={{width: '350px',height:'233.33px', boderRadius:'10px !important', overflow: 'hidden'}}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               src="https://www.youtube.com/embed/0Eo7S7PCWuI?autoplay=0&mute=0&controls=1&origin=https%3A%2F%2Fnimbus.com.ng&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=29"
               sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"

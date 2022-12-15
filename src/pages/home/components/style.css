@@ -63,11 +63,11 @@
 } 
 .home-body {
   position: absolute;
-  top: 10%;
-  height: 90vh;
+  top: 0;
+  height: 100vh;
   display: flex;
   padding: 0 4rem;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   z-index: 1;
 }
@@ -76,7 +76,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
+  margin-top: 4rem;
   
 }
 .home-body > div {
@@ -124,11 +125,16 @@
   /* height: 26.5vh;
   padding: 0 19%; */
   gap: 2rem;
+ 
   
+}
+#whatarewe {
+  width: 400px !important;
 }
 .who-are-we {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
   width: 60%;
@@ -221,8 +227,8 @@
   
 }
 #nimbus {
-  width: 400px;
-  height: 350px;
+  width: 350px;
+  height: 250px;
   border-radius: 20px;
 }
 .whatwedo-content  .span1 {
@@ -238,22 +244,192 @@
 .whatwedo-content .img {
   width: 350px;
   overflow: hidden;
-}
-.whatwedo-content img {
-  width: fit-content;
-  height: fit-content;
-  top:0;
-  left:-100%; right:-100%;
-  
-  transform-origin:50% 50%;
-  transform:scale(1.1);
-  transition:transform .3s ease;
   border-radius: 20px;
 }
-.whatwedo-content img:hover {
-  transform: scale(1);
+.whatwedo-content img {
+  width: 100%;
+  height: 100%;
 }
-@media only screen and (max-width: 550px) { 
+.whatwedo-content img:hover {
+  transform: scale(1.1);
+  transition-duration: .7s;
+}
+.soow p {
+  font-size: 14px;
+  color: grey;
+  line-height: 20px;
+  margin: 0;
+
+}
+.soow-gallery > span > h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.soow-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem ;
+  margin: 3rem 0;
+}
+.soow-gallery > span {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.soow-gallery > span > div {
+  width: 330px;
+  height: 240px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.soow-gallery {
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+.soow-gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.soow-gallery img:hover {
+  transition-duration: .7s;
+  transform: scale(1.1)
+}
+.ourteam-content {
+  background: url(../../../assets/com.png);
+  background-repeat: no-repeat, repeat;
+  background-position: center; 
+  object-fit: contain;
+  /* background-size: contain; */
+  width: 500px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  border-radius: 10px;
+  box-shadow: #16a5de12 0px 54px 55px, #16a5de12 0px -12px 30px, #16a5de12 0px 4px 6px,#16a5de12 0px 12px 13px, #16a5de12 0px -3px 5px;
+  margin: 3rem 0;
+}
+.ourteam-content p {
+  font-size: 20px !important;
+  line-height: 150%;
+  color: grey;
+  font-weight: 500;
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+.OurTeam h2, 
+.soow h2 {
+  font-size: 2rem !important;
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 150%;
+  margin: 0;
+}
+.OurTeam p {
+  font-family: var(--font-family) !important;
+  color: rgba(128, 128, 128, 0.737);
+  font-size: .9rem;
+  padding: .7rem 0 1.3rem;
+  margin: 0;
+}
+.team-button a {
+  color: white;
+  text-decoration: none;
+}
+/* .ourmain-team > button {
+  width: 3rem !important;
+} */
+.team-button a:hover {
+  color: white;
+}
+.innproject {
+  background:#1E52AE;
+  padding: 3rem;
+}
+.innproject > h2 {
+  color: yellow;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+ 
+}
+.innproject > h6 {
+  border-top: 10px solid rgb(14, 14, 112);
+  width: 350px;
+  height: -4rem;
+}
+.innproject-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.innproject-domain {
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  
+}
+/* .innproject-img {
+  
+} */
+.innproject img {
+  width: 100%;
+  height: 100%;
+}
+.innproject img:hover {
+  transition: .7s;
+  transform: scale(1.08);
+}
+.innproject span {
+  position: absolute;
+  left: 12.5rem;
+  bottom: 2.2rem;
+  z-index: -1;
+  width: 350px;
+  height: 350px;
+  border-bottom-right-radius: 30%;
+}
+.innproject-writing {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.innproject-writing p {
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 150%;
+
+}
+.innproject-writing p a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1300px) { 
   .home-body {
     padding: 0 .5rem;
   }
@@ -264,5 +440,97 @@
      font-size: 15px;
      line-height: 30px;
   }
-
+  .soow-gallery {
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 550px) { 
+  .home-body {
+    padding: 0 .3rem;
+  }
+  .typewriter {
+    font-size: 1.5rem;
+  }
+  .home-body > div p {
+     font-size: 15px;
+     line-height: 30px;
+  }
+  .typewriter {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .home-body > div p {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .whatarewe {
+    width: 100% !important;
+    padding: 2rem 1rem !important;
+  }
+  .whatarewe h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .who-are-we > div {
+    margin: 0;
+    align-items: center;
+  }
+  #whatarewe {
+    width: 300px !important;
+  }
+  .whatarewe p{
+    font-size: .8rem;
+  }
+  .whatwedo {
+    padding: 0 1rem;
+  }
+  .whatwedo-content .img {
+    width: 280px;
+    margin: auto;
+  }
+  #nimbus {
+    width: 280px;
+    height: 180px;
+    margin: auto;
+  }
+  .whatwedo-content .iframe {
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .whatwedo-content .span {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatwedo-content .span1 {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .whatwedo-content p,
+  .whatwedo-content h2 {
+    padding: 0 1rem;
+  }
+  .ourteam-content {
+    padding: 0 20px;
+    width: 280px;
+  }
+  .innproject > h2 {
+    font-size: 1.8rem;
+  }
+  .innproject > h6 {
+    width: 250px;
+  }
+  .innproject-domain {
+    justify-content: column !important;
+    padding: 0 1rem;
+  }
+  .innproject-img {
+    width: 250px;
+    height: 200px;
+  }
+  .innproject {
+    padding: 1rem !important;
+  }
 }

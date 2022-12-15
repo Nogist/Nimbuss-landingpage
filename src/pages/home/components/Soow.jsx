@@ -8,20 +8,27 @@ const Soow = () => {
     <div className='soow d-flex flex-column align-items-center py-10'>
       <div className='d-flex flex-column justify-content-center align-items-center'>
         <h2>Some of our work</h2>
-        <p>We offer out-of-home advertising, branding and activation consultancy.</p>
+        <p style={{marginTop: '.4rem'}}>We offer out-of-home advertising, branding </p> 
+        <p> and activation consultancy.</p>
       </div>
-      <div className='d-flex flex-row justify-content-between align-items-center pt-10'>
+      <div className='soow-gallery d-flex pt-10'>
         <span>
-          <img src={picture1} alt="/" />
-          <h2>Mall Screens</h2>
+          <div>
+            <img src={picture1} alt="/" />
+          </div>
+          <h3>Mall Screens</h3>
         </span>
         <span>
-          <img src={picture3} alt="/" />
-          <h2>Branding</h2>
+          <div>
+            <img src={picture3} alt="/" />
+          </div>
+          <h3>Branding</h3>
         </span>
         <span>
+          <div>
           <img src={picture4} alt="/" />
-          <h2>Activation</h2>
+          </div>
+          <h3>Activation</h3>
         </span>
       </div>
     </div>

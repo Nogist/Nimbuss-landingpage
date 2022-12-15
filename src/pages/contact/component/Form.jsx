@@ -108,7 +108,7 @@ const Form = () => {
                   ? "textarea-error"
                   : ""
           }
-          placeholder="message"
+          placeholder="Tell us about your Project"
           value={values.message}
           onChange={handleChange}
           onBlur={handleBlur}

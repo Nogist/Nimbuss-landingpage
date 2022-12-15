@@ -53,31 +53,47 @@
 }
 .formsk form {
   padding: 3rem 6rem;
-  width: 50rem !important;
+  width: 50%;
   background: white;
-  gap: 3rem;
+  gap: 2rem;
   
 }
+button {
+  background-color: var(--color-hover) !important;
+  color: white;
+}
+form > button {
+    padding: 0.6rem 2.5rem;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+a {
+
+  text-decoration: none !important;
+}
+.formsk h2 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: 150%;
+}
 .formsk form > input, 
-textarea#message {
+textarea {
   width: 100%;
   border: 1px solid #C4C4C4;
   padding: .8rem 0.7rem;
   border-radius: 10px;
-  background-color: yellow;
-}
-textarea #message{
-  width: 100%;
-  border: 1px solid #C4C4C4;
-  padding: .8rem 0.7rem;
-  border-radius: 10px;
-  background-color: yellow;
-
 }
 
 
-@media screen and (min-width:600px) {
+
+@media screen and (max-width:600px) {
   .container {
       width: 50%;
+  }
+  .formsk form {
+    padding: 3rem 2rem;
   }
 }

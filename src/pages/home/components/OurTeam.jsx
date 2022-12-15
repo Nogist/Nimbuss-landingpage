@@ -29,7 +29,7 @@ const OurTeam = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
           dots: true
@@ -46,17 +46,21 @@ const OurTeam = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
   };
   return (
-    <div className='OurTeam'>
-      <div>
-        <h2>Trusted by Agencies & Popular brands</h2>
-        <p>We are committed to helping you build meaningful interaction and topnotch digital brand communications with customers everywhere and everytime.</p>
+    <div className='OurTeam py-10'>
+      <div className='d-flex flex-column align-items-center justify-content-center'>
+        <h2>Trusted by Agencies </h2>
+         <h2>& Popular brands</h2>
+         <div className='ourteam-content'>
+         <p className='ourteam-contents'>We are committed to helping you build meaningful interaction and topnotch digital brand communications with customers everywhere and everytime.</p>
+         </div>
+
       </div>
       <div className='slider-settings py-5'>
           <Slider {...settings} >
@@ -95,8 +99,10 @@ const OurTeam = () => {
       <div className='ourmain-team w-100 px-20 py-10 text-center'>
         <h2>Our Team</h2>
         <p>We are a team of experts working collaboratively to empower you with <br /> opportunities to reach your customers and grow your bottom line</p>
-        <img src={team} alt='/' />
-        <button className='mt-10'> <Link to='/about'>View our full profile</Link></button>
+        <div className='w-100 d-flex justify-content-center'>
+          <img src={team} alt='/' />
+        </div>
+        <button className='team-button mt-10'> <Link to='/about'>View our full profile</Link></button>
       </div>
     </div>
   )

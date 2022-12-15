@@ -10,7 +10,7 @@ const InnProject = () => {
       <div className='innproject-domain w-100 d-flex flex-wrap py-10'>
         <div className='innproject-img'>
           <img src={picture} alt="/" />
-        <span></span>
+
         </div>
           <div className='innproject-writing'>
             <p>

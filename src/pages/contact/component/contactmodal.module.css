@@ -53,7 +53,7 @@
 }
 .formsk form {
   padding: 3rem 6rem;
-  width: 50%;
+  width: 50% !important;
   background: white;
   gap: 2rem;
   
@@ -86,8 +86,15 @@ textarea {
   padding: .8rem 0.7rem;
   border-radius: 10px;
 }
-
-
+@media screen and (max-width:1200px) {
+  .formsk form {
+    padding: 3rem 6rem;
+    width: 100% !important;
+    background: white;
+    gap: 2rem;
+    
+  }
+}
 
 @media screen and (max-width:600px) {
   .container {
